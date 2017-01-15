@@ -1,0 +1,19 @@
+{
+    "name": "cangulo/util-bundle",
+    "description": "Utils for my Symfony projects",
+    "keywords": [],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eduardo Marinho",
+            "email": "e@calmaamigo.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Cangulo\\UtilBundle\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    }
+}
