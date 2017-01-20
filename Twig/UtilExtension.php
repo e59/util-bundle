@@ -54,16 +54,6 @@ class UtilExtension extends \Twig_Extension
 
     public function getName()
     {
-        return 'app_extension';
-    }
-
-    public function initRuntime(Twig_Environment $environment)
-    {
-        // TODO: Implement initRuntime() method.
-    }
-
-    public function getGlobals()
-    {
-        // TODO: Implement getGlobals() method.
+        return 'cangulo_utilbundle_extension';
     }
 }
