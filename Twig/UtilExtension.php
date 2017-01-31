@@ -24,11 +24,22 @@ class UtilExtension extends \Twig_Extension
         );
     }
 
+    public function getFunctions() {
+        return array(
+            new \Twig_SimpleFunction('get_parameter', array($this, 'get_parameter')),
+
+        );
+    }
+
     public function getTests()
     {
         return [
             new \Twig_SimpleTest('date', array($this, 'isDate')),
         ];
+    }
+
+    public function get_parameter($name) {
+        return $this->container->getParameter($name);
     }
 
     public function isDate($obj)
