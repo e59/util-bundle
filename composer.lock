@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "356e47239dcdcec0b7d124823b0ce339",
+    "content-hash": "3e69af12dcc54aae415a4ebabfa1e66f",
     "packages": [
         {
             "name": "brandonwamboldt/utilphp",
@@ -854,12 +854,12 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "brandonwamboldt/utilphp": 20,
         "jansenfelipe/cidades-gratis": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
