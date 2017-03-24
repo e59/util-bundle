@@ -32,5 +32,8 @@
             "type": "vcs",
             "url": "https://github.com/e59/cidades-gratis"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+
 }
