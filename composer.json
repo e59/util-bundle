@@ -21,7 +21,8 @@
         "respect/validation": "^1.1",
         "brandonwamboldt/utilphp": "dev-string-mask",
         "jansenfelipe/cidades-gratis": "dev-e59-update",
-        "jansenfelipe/cep-gratis": "^4.0"
+        "jansenfelipe/cep-gratis": "^4.0",
+        "twig/extensions": "^1.4"
     },
     "repositories": {
         "utilphp": {
