@@ -18,6 +18,19 @@
     },
     "require": {
         "nesbot/carbon": "^1.22",
-        "respect/validation": "^1.1"
+        "respect/validation": "^1.1",
+        "brandonwamboldt/utilphp": "dev-string-mask",
+        "jansenfelipe/cidades-gratis": "dev-e59-update",
+        "jansenfelipe/cep-gratis": "^4.0"
+    },
+    "repositories": {
+        "utilphp": {
+            "type": "vcs",
+            "url": "https://github.com/e59/utilphp"
+        },
+        "cidades-gratis": {
+            "type": "vcs",
+            "url": "https://github.com/e59/cidades-gratis"
+        }
     }
 }
