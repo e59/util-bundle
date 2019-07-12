@@ -81,8 +81,6 @@ class Service implements ContainerAwareInterface
 
         $ufs = $cache->getItem('ufs');
 
-        var_dump(Cidades::getUfs());die;
-
 //        $cache->deleteItem('ufs');
 
         if (!$ufs->isHit()) {
