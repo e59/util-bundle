@@ -81,13 +81,45 @@ class Service implements ContainerAwareInterface
 
         $ufs = $cache->getItem('ufs');
 
+        var_dump(Cidades::getUfs());die;
+
 //        $cache->deleteItem('ufs');
 
         if (!$ufs->isHit()) {
-            $ufList = Cidades::getUfs();
-            $ufData = array_combine(array_column($ufList, 'nome'), array_column($ufList, 'uf'));
-            asort($ufData);
-            $ufs->set($ufData);
+            // Dead
+//            $ufList = Cidades::getUfs();
+//            $ufData = array_combine(array_column($ufList, 'nome'), array_column($ufList, 'uf'));
+//            asort($ufData);
+//            $ufs->set($ufData);
+            $ufs->set(array(
+                'AC'=>'Acre',
+                'AL'=>'Alagoas',
+                'AP'=>'Amapá',
+                'AM'=>'Amazonas',
+                'BA'=>'Bahia',
+                'CE'=>'Ceará',
+                'DF'=>'Distrito Federal',
+                'ES'=>'Espírito Santo',
+                'GO'=>'Goiás',
+                'MA'=>'Maranhão',
+                'MT'=>'Mato Grosso',
+                'MS'=>'Mato Grosso do Sul',
+                'MG'=>'Minas Gerais',
+                'PA'=>'Pará',
+                'PB'=>'Paraíba',
+                'PR'=>'Paraná',
+                'PE'=>'Pernambuco',
+                'PI'=>'Piauí',
+                'RJ'=>'Rio de Janeiro',
+                'RN'=>'Rio Grande do Norte',
+                'RS'=>'Rio Grande do Sul',
+                'RO'=>'Rondônia',
+                'RR'=>'Roraima',
+                'SC'=>'Santa Catarina',
+                'SP'=>'São Paulo',
+                'SE'=>'Sergipe',
+                'TO'=>'Tocantins'
+            ));
             $cache->save($ufs);
         }
 
